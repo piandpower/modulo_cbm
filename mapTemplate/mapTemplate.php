@@ -1,23 +1,31 @@
 <?php
-
 $fichero = 'mapTemplate.py';
-$nuevo_fichero = date("Y-m-d")."_".date("H:i:s")."_".$fichero;
+$dir = date("Y-m-d")."_".date("H:i:s")."_".$fichero;
 
-copy($fichero,$nuevo_fichero);
+copy($fichero,$dir);
 
-echo $nuevo_fichero;
+$lineNumber = 3;
+$changeTo = "         the changed line\n";
 
-if ($nuevo_fichero){
+$contents = file($dir);
 
-$content = file($nuevo_fichero); //Read the file into an array. Line number => line content
-foreach($content as $lineNumber => &$lineContent) { //Loop through the array (the "lines")
-    if($lineNumber == 5) { //Remember we start at line 0.
-        $lineContent .= "Hello World" . PHP_EOL; //Modify the line. (We're adding another line by using PHP_EOL)
-    }
+$new_contents = array();
+foreach ($contents as $key => $value) {
+$new_contents[] = $value;
+if ($key == $lineNumber) {
+$new_contents[] = $changeTo;
+}
 }
 
-$allContent = implode("", $content); //Put the array back into one string
-file_put_contents($file, $allContent); //Overwrite the file with the new content
+file_put_contents($dir, implode('',$new_contents));
+
+//-----Descarga del archivo
+
+if (is_file($dir)) {
+header("Content-Disposition: attachment; filename=\"$dir\"");
+readfile($dir);
+} else {
+die("Error: no se encontró el archivo '$dir'");
 }
 
 ?>
