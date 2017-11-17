@@ -19,7 +19,7 @@ else
 {
 	ini_set("display_errors", "on");
 	header('Content-Type: text/html; charset=utf-8'); 
-	require('PHP/conexion.php');
+	require('PHP/conn.php');
 	require('PHP/funciones.php');
 	$db = conectar();
 	if ($db)
@@ -957,9 +957,10 @@ map.renderSync();
              <div id="div15"  class="element">
 
                 <div id="contenido">
+                     
+  <form class="mapTemplate" id="mapTemplate" action="mapTemplate/mapTemplate.php"  method="post" enctype="multipart/form-data">
+	<input type="submit" id="btn_mapTemplate" name="btn_mapTemplate" value="Generar Plantilla">                                       
 
-                    <form name="datos" method="POST" >
-                        <input type = "submit" value = "Generar Plantilla"  id="RegistroColaborador" onclick = "this.form.action = 'guardar.php?hoja=RegistroColaborador&id=<?php echo $id;?>&cv_principal=<?php echo $cv_principal;?>'"/>
 							<table width="869">
                             	<tr >
                                    	<td width="200">&nbsp;</td>
@@ -993,7 +994,7 @@ map.renderSync();
 <!--
 <div id="nameOfFile">
                                       <form>                                                  
-                                       <p class="txtN1">Generar plantilla <?php echo $nameFileSession;?>.jpg</p>
+                                       <p class="txtN1">Plantilla <?php echo $nameFileSession;?>.jpg</p>
                                        </form>
                                       
   <form class="formulario_plantilla" id="formulario_plantilla" action="plantilla.php"  method="post" enctype="multipart/form-data">
