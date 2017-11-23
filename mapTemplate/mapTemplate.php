@@ -1,5 +1,5 @@
 <?php
-$fichero = 'mapTemplate.py';
+$fichero = 'templateArcPy.py';
 $dir = date("Y-m-d")."_".date("H:i:s")."_".$fichero;
 
 copy($fichero,$dir);

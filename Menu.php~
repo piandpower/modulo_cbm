@@ -389,11 +389,11 @@ function habilitar() {
 				;}; ?>   
 
                                  <?php if ($puesto == "Administrador de Metadatos" || $puesto == "analista") {echo 
-                 		'<input type="button" onclick="cambiar.accion (15)" value="Generar Plantilla">'                  
+                 		'<input type="button" onclick="cambiar.accion (15)" value="Plantilla">'                  
 				;}; ?>   
                                  
 				<?php if ($puesto == "Administrador de Metadatos" || $puesto == "administrador" || $puesto == "analista") {echo 
-				'<input type="button" onclick="cambiar.accion (12)" value="Registro de colaborador">'
+				'<input type="button" onclick="cambiar.accion (12)" value="Colaboradores">'
 				;}; ?>   
 		
 <!--                                 <?php if ($puesto == "administrador" || $puesto == "analista") {echo 
@@ -722,6 +722,10 @@ function habilitar() {
 
 
 
+ <form>                                                  
+                                       <p class="txtN1">Instrucciones y script</p>
+                                       </form>
+ 
 
 
 
@@ -957,9 +961,12 @@ map.renderSync();
              <div id="div15"  class="element">
 
                 <div id="contenido">
-                     
+                      <form>                                                  
+                                       <p class="txtN1">Generar Plantilla</p>
+                                       </form>
+                                      
   <form class="mapTemplate" id="mapTemplate" action="mapTemplate/mapTemplate.php"  method="post" enctype="multipart/form-data">
-	<input type="submit" id="btn_mapTemplate" name="btn_mapTemplate" value="Generar Plantilla">                                       
+	<input type="submit" id="btn_mapTemplate" name="btn_mapTemplate" value="Generar">                                       
 
 							<table width="869">
                             	<tr >
@@ -991,6 +998,11 @@ map.renderSync();
  
                           	</table>
                     </form>
+
+ <form>                                                  
+                                       <p class="txtN1">Instrucciones y script</p>
+                                       </form>
+                                      
 <!--
 <div id="nameOfFile">
                                       <form>                                                  
