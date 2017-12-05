@@ -388,7 +388,18 @@ function sql ($campo, $id , $cv_principal , $cve)
 	 
 	 case "carga_arbol":	$array = array( 'SELECT c."clasificacion" 	FROM coberturas AS c WHERE c."record_id" = '.$id.' ;',
  		'SELECT "idNivel1", "Nivel1", "idnivel2", "Nivel2", "idNivel3", "Nivel3", "idNivel4", "Nivel4", "idNivel5", "Nivel5", "idNivel6", "Nivel6", "id" FROM clasificacion GROUP BY "idNivel1", "Nivel1", "idnivel2", "Nivel2", "idNivel3", "Nivel3", "idNivel4", "Nivel4", "idNivel5", "Nivel5", "idNivel6", "Nivel6", "id" ORDER BY "idNivel1", "idnivel2", "idNivel3", "idNivel4", "idNivel5", "idNivel6", "id";' ); break;
+	
+
+
+
+	
 		
+	case "pais":			$array = array(	'SELECT coberturas."pubplace_pais"	FROM analistas inner join coberturas on coberturas."id_analista" = analistas."idAnalista" 
+														where coberturas."id_analista" = '. $cv_principal.' AND coberturas."record_id" = '.$id.';',
+											'SELECT "cve_pais" , "nom_pais" FROM pais ORDER BY "nom_pais" ASC'	); break;
+	
+
+	
 		
 	case "estado":			$array = array(	'SELECT coberturas."pubplace_edo"	FROM analistas inner join coberturas on coberturas."id_analista" = analistas."idAnalista" 
 														where coberturas."id_analista" = '. $cv_principal.' AND coberturas."record_id" = '.$id.';',
@@ -402,10 +413,10 @@ function sql ($campo, $id , $cv_principal , $cve)
 													where coberturas."id_analista" = '. $cv_principal.' AND coberturas."record_id" = '.$id.';',
 													'SELECT "cve_loc", "nom_loc" FROM localidades  WHERE "cve_mun" = '.$cve.' ORDER BY "nom_loc" ASC'	); break;
 													
-	case "claves":			$array = array(	'SELECT coberturas."pubplace_edo" , coberturas."pubplace_muni" , coberturas."pubplace_loc" , coberturas."pubplace"	
+	case "claves":			$array = array(	'SELECT coberturas."pubplace_edo" , coberturas."pubplace_muni" , coberturas."pubplace_loc" , coberturas."pubplace", coberturas."pubplace_pais"	
 												FROM analistas inner join coberturas on coberturas."id_analista" = analistas."idAnalista" 
 												where coberturas."id_analista" = '. $cv_principal.' AND coberturas."record_id" = '.$id.';',
-											'SELECT "pubplace_edo" , "pubplace_muni" , "pubplace_loc" , "pubplace" 	FROM coberturas WHERE "record_id" = '.$id.' ;'	); break;
+											'SELECT "pubplace_edo" , "pubplace_muni" , "pubplace_loc" , "pubplace" 	, "pubplace_pais" FROM coberturas WHERE "record_id" = '.$id.' ;'	); break;
 											
 	case "uc_cobertura": 	$array = array(	'SELECT * FROM coberturas WHERE "record_id" = '.$id.' ;',
 											''	); break;

@@ -953,6 +953,34 @@ $(function()
 	  close: function() {allFields.val( "" ).removeClass( "ui-state-error" );}
       });
 
+
+      $( "#dialog_borrar" ).dialog
+      ({
+	  autoOpen: false,
+	  height: 250,
+	  width: 450,
+	  modal: true,
+	  buttons:
+	  {
+	      "Borrar Metadato": function()
+	      {
+            $( "#formBorrar" ).submit() 
+	      },
+
+	      "Cancelar": function() {$( this ).dialog( "close" );}
+	  },
+
+	  close: function() {allFields.val( "" ).removeClass( "ui-state-error" );}
+      });
+
+
+
+
+
+
+
+
+
       $( "#cerrar_sesion" ).dialog
       ({
 	  autoOpen: false,
@@ -1089,6 +1117,7 @@ form.attr("enctype","multipart/form-data");
 
       $( "#nuevo" ).click(function() {$( "#dialog_nuevo" ).dialog( "open" );});
       $( "#duplica" ).click(function() {$( "#dialog_duplica" ).dialog( "open" );});
+      $( "#borrar" ).click(function() {$( "#dialog_borrar" ).dialog( "open" );});
 
       $( "#cerrarSesion" ).click(function() {$( "#cerrar_sesion" ).dialog( "open" );});
   

@@ -1,73 +1,27 @@
 "CONABIO Metadatos" 
 ----- Archivo SHP ----  
-INFO: Open of `C:\Users\CPR\Documents'
+INFO: Open of `C:\Users\USIG\Desktop\Guatemala2017\GUATEMALA\ara_miligw'
       using driver `ESRI Shapefile' successful.
 
-Layer name: puntos_calor_satelite
-Geometry: Point
-Feature Count: 55
-Extent: (-89.075000, 16.965000) - (-88.878360, 17.006000)
+Layer name: ara_miligw
+Geometry: Polygon
+Feature Count: 1034
+Extent: (-110.363229, 15.671360) - (-93.533229, 30.221360)
 Layer SRS WKT:
-GEOGCS["WGS 84",
-    DATUM["World Geodetic System 1984",
-        SPHEROID["WGS 84",6378137.0,298.257223563,
-            AUTHORITY["EPSG","7030"]],
-        AUTHORITY["EPSG","6326"]],
-    PRIMEM["Greenwich",0.0,
-        AUTHORITY["EPSG","8901"]],
-    UNIT["degree",0.017453292519943295],
-    AXIS["Geodetic longitude",EAST],
-    AXIS["Geodetic latitude",NORTH],
-    AUTHORITY["EPSG","4326"]]
-idpuntocal: Integer (9.0)
-paso: Date (10.0)
-latlon: String (254.0)
-id_pais: Integer (9.0)
-nom_pais: String (254.0)
-nom_estado: String (254.0)
-nom_mun: String (254.0)
-vegetacion: String (254.0)
-anp: String (254.0)
-pendiente: Real (33.31)
-satelite: String (254.0)
-hora: String (254.0)
---------------  
------ Archivo SHP ----  
-INFO: Open of `C:\Users\CPR\Documents\ArcGIS'
-      using driver `ESRI Shapefile' successful.
-
-Layer name: puntos_calor_satelite
-Geometry: Point
-Feature Count: 55
-Extent: (-89.075000, 16.965000) - (-88.878360, 17.006000)
-Layer SRS WKT:
-GEOGCS["WGS 84",
-    DATUM["World Geodetic System 1984",
-        SPHEROID["WGS 84",6378137.0,298.257223563,
-            AUTHORITY["EPSG","7030"]],
-        AUTHORITY["EPSG","6326"]],
-    PRIMEM["Greenwich",0.0,
-        AUTHORITY["EPSG","8901"]],
-    UNIT["degree",0.017453292519943295],
-    AXIS["Geodetic longitude",EAST],
-    AXIS["Geodetic latitude",NORTH],
-    AUTHORITY["EPSG","4326"]]
-idpuntocal: Integer (9.0)
-paso: Date (10.0)
-latlon: String (254.0)
-id_pais: Integer (9.0)
-nom_pais: String (254.0)
-nom_estado: String (254.0)
-nom_mun: String (254.0)
-vegetacion: String (254.0)
-anp: String (254.0)
-pendiente: Real (33.31)
-satelite: String (254.0)
-hora: String (254.0)
+GEOGCS["GCS_WGS_1984",
+    DATUM["WGS_1984",
+        SPHEROID["WGS_1984",6378137.0,298.257223563]],
+    PRIMEM["Greenwich",0.0],
+    UNIT["Degree",0.0174532925199433]]
+AREA: Real (20.5)
+PERIMETER: Real (20.5)
+COV_: Real (11.0)
+COV_ID: Real (11.0)
+VALUE: Integer (4.0)
 --------------  
 ----- Archivo TIF----  
 Driver: GTiff/GeoTIFF
-Files: C:\Users\CPR\Documents\gdal\a.tif
+Files: C:\Users\USIG\Desktop\Guatemala2017\GUATEMALA\ara_miligw\gdal\a.tif
 Size is 1253, 1005
 Coordinate System is `'
 Origin = (-106.969600599270000,26.175198246442999)
@@ -83,57 +37,9 @@ Center      (-101.7487670,  21.9876980)
 Band 1 Block=1253x1 Type=Float32, ColorInterp=Gray
   NoData Value=-9999
 --------------  
------ Archivo TIF----  
-Driver: GTiff/GeoTIFF
-Files: C:\Users\CPR\Documents\MAM\FAV_0001A_01_000_00001_Geo.tif
-       C:\Users\CPR\Documents\MAM\FAV_0001A_01_000_00001_Geo.tif.ovr
-Size is 2227, 2546
-Coordinate System is:
-PROJCS["WGS 84 / UTM zone 15N",
-    GEOGCS["WGS 84",
-        DATUM["WGS_1984",
-            SPHEROID["WGS 84",6378137,298.2572235630016,
-                AUTHORITY["EPSG","7030"]],
-            AUTHORITY["EPSG","6326"]],
-        PRIMEM["Greenwich",0],
-        UNIT["degree",0.0174532925199433],
-        AUTHORITY["EPSG","4326"]],
-    PROJECTION["Transverse_Mercator"],
-    PARAMETER["latitude_of_origin",0],
-    PARAMETER["central_meridian",-93],
-    PARAMETER["scale_factor",0.9996],
-    PARAMETER["false_easting",500000],
-    PARAMETER["false_northing",0],
-    UNIT["metre",1,
-        AUTHORITY["EPSG","9001"]],
-    AUTHORITY["EPSG","32615"]]
-Origin = (571841.590845540170000,2050760.298604257600000)
-Pixel Size = (1.350245999999992,-1.350246000000040)
-Metadata:
-  AREA_OR_POINT=Area
-Image Structure Metadata:
-  INTERLEAVE=BAND
-Corner Coordinates:
-Upper Left  (  571841.591, 2050760.299) 
-Lower Left  (  571841.591, 2047322.572) 
-Upper Right (  574848.589, 2050760.299) 
-Lower Right (  574848.589, 2047322.572) 
-Center      (  573345.090, 2049041.435) 
-Band 1 Block=128x128 Type=UInt16, ColorInterp=Gray
-  Min=0.000 Max=65535.000 
-  Minimum=0.000, Maximum=65535.000, Mean=12710.833, StdDev=14604.534
-  NoData Value=65536
-  Overviews: 557x637, 279x319, 140x160
-  Metadata:
-    STATISTICS_MINIMUM=0
-    STATISTICS_MAXIMUM=65535
-    STATISTICS_MEAN=12710.833192826
-    STATISTICS_STDDEV=14604.533855478
-    LAYER_TYPE=athematic
---------------  
 ----- Archivo Arc ASCII grid ----  
 Driver: AAIGrid/Arc/Info ASCII Grid
-Files: C:\Users\CPR\Documents\gdal\SCEANAHUACU.asc
+Files: C:\Users\USIG\Desktop\Guatemala2017\GUATEMALA\ara_miligw\gdal\SCEANAHUACU.asc
 Size is 1253, 1005
 Coordinate System is `'
 Origin = (-106.969600599270000,26.175198246442999)

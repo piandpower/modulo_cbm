@@ -19,6 +19,7 @@ else
 {
 	ini_set("display_errors", "on");
 	header('Content-Type: text/html; charset=utf-8'); 
+	require('PHP/conn.php');
 	require('PHP/funciones.php');
 	$db = conectar();
 	if ($db)
@@ -345,6 +346,9 @@ function habilitar() {
  
             	<input type="button" id="nuevo" value="Nuevo Registro">
                 <input type="button" id="duplica" value="Duplicar Registro">
+				<?php if ($cv_principal == 28) {echo 
+                '<input type="button" id="borrar" value="Borrar Registro">'
+				;}; ?>   
                 <input type="button" id="cerrarSesion" value="Cerrar Sesi&oacute;n">
 	      	</div> 
           	<div id="lf2" class="accordion">
@@ -385,11 +389,11 @@ function habilitar() {
 				;}; ?>   
 
                                  <?php if ($puesto == "Administrador de Metadatos" || $puesto == "analista") {echo 
-                 		'<input type="button" onclick="cambiar.accion (15)" value="Generar Plantilla">'                  
+                 		'<input type="button" onclick="cambiar.accion (15)" value="Plantilla">'                  
 				;}; ?>   
                                  
 				<?php if ($puesto == "Administrador de Metadatos" || $puesto == "administrador" || $puesto == "analista") {echo 
-				'<input type="button" onclick="cambiar.accion (12)" value="Registro de colaborador">'
+				'<input type="button" onclick="cambiar.accion (12)" value="Colaboradores">'
 				;}; ?>   
 		
 <!--                                 <?php if ($puesto == "administrador" || $puesto == "analista") {echo 
@@ -718,6 +722,17 @@ function habilitar() {
 
 
 
+ <form>                                                  
+                                       <p class="txtN1">Instrucciones y script</p>
+                                       </form>
+ 
+
+
+
+
+
+
+
                     <form name="datos" method="POST" >
                         <input type = "submit" value = "Guardar"  id="RegistroColaborador" onclick = "this.form.action = 'guardar.php?hoja=RegistroColaborador&id=<?php echo $id;?>&cv_principal=<?php echo $cv_principal;?>'"/>
 							<table width="869">
@@ -946,17 +961,61 @@ map.renderSync();
              <div id="div15"  class="element">
 
                 <div id="contenido">
+                      <form>                                                  
+                                       <p class="txtN1">Generar Plantilla</p>
+                                       </form>
+                                      
+  <form class="mapTemplate" id="mapTemplate" action="mapTemplate/mapTemplate.php"  method="post" enctype="multipart/form-data">
+	<input type="submit" id="btn_mapTemplate" name="btn_mapTemplate" value="Generar">                                       
 
+							<table width="869">
+                            	<tr >
+                                   	<td width="200">&nbsp;</td>
+                                    <td width="657">&nbsp;</td>
+                                                       <tr><td>Nombre de Proyecto</td>
+                                   <td><select id="nombreProy" name="nombreProy">
+                                 <option value="jm022">jm022</option>
+                                 <option value="jm053">jm053</option>
+                                 <option value="jm023">jm023</option>
+                                 <option value="jm024">jm024</option>
+                                 <option value="jm025">jm025</option>
+                                 <option value="jm026">jm026</option>
+                                 <option value="jm027">jm027</option>
+                                 <option value="jm028">jm028</option>
+                                 <option value="jm029">jm029</option>
+                                    </select></td>
+                                </tr>
+                                                       <tr><td>Tipo de Proyecto</td>
+                                   <td><select id="tipoProy" name="tipoProy">
+                                 <option value="dist">Distribución</option>
+                                 <option value="sitios">Sitios de recolecta</option>
+                                </tr>
+                                                       <tr><td>Software</td>
+                                   <td><select id="software" name="software">
+                                 <option value="arc">ArcGis</option>
+                                 <option value="quantum">QuantumGis</option>
+                                </tr>
+ 
+                          	</table>
+                    </form>
+
+ <form>                                                  
+                                       <p class="txtN1">Instrucciones y script</p>
+                                       </form>
+                                      
+<!--
 <div id="nameOfFile">
                                       <form>                                                  
-                                       <p class="txtN1">Generar plantilla <?php echo $nameFileSession;?>.jpg</p>
+                                       <p class="txtN1">Plantilla <?php echo $nameFileSession;?>.jpg</p>
                                        </form>
                                       
   <form class="formulario_plantilla" id="formulario_plantilla" action="plantilla.php"  method="post" enctype="multipart/form-data">
 	<input type="submit" id="boton_generar" name="boton_generar" value="Generar">                                       
   </form>
 
-</div>
+</div> 
+-->
+
 </div>
 </div>
 
@@ -1311,7 +1370,18 @@ map.renderSync();
                         <input type="hidden"  name="id_general" id="id_general" value="<?php echo $id;?>"/>
                 </form>
             </div>
-            
+
+
+
+            <div id="dialog_borrar"  title="Borrar Metadato">
+                <p class="validateTips">¿Esta seguro de borrar el Metadato: <?php echo $nameFileSession;?>?</p>
+                <form name="delete_metadato" method="post" action="borrar.php" id="formBorrar">
+                        <input type="hidden" name="cv_principal" id="cv_principal" value="<?php echo $cv_principal;?>"/>
+                        <input type="hidden"  name="id_general" id="id_general" value="<?php echo $id;?>"/>
+                </form>
+            </div>
+
+
             <div id="cerrar_sesion"  title="Finalizar Sesion">
                 <form name="terminoSesion" method="post" action="PHP/cerrarSesion.php" id="formTerminoSesion">
                         <img src="CSS/images/alert.jpg" class="alert"  /><p class="validateTips">Guardar su Informaci&oacute;n <br />Antes de salir</p>
@@ -1333,4 +1403,11 @@ map.renderSync();
  ?>
 </body>
 </html>
+
+
+
+
+
+
+
 
