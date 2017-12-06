@@ -40,7 +40,10 @@ else
 				$sqlupd .= "cobertura 		= '".$_POST['c_cobertura'] 		."',";
 				$sqlupd .= "publish 		= '".$_POST['c_publish'] 		."',";
 				$sqlupd .= "publish_siglas 	= '".$_POST['c_publish_siglas'] ."',";
-				$sqlupd .= "pubplace_edo	= '".$_POST['estado'] 			."',";
+				$sqlupd .= "pubplace_pais	= '".$_POST['pais'] 			."',";
+
+                if (isset($_POST['estado'])) { $sqlupd .= "pubplace_edo	= '".$_POST['estado']."',";}
+                else                         { $sqlupd .= "pubplace_edo	= '".$valor_null."',";}
 				
 				if (isset($_POST['municipio'])) { $sqlupd .= "pubplace_muni	= '".$_POST['municipio']."',";}
 				else 							{ $sqlupd .= "pubplace_muni	= '".$valor_null."',";}

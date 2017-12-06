@@ -18,6 +18,7 @@ else
 {
 	ini_set("display_errors", "on");
 	header('Content-Type: text/html; charset=utf-8'); 
+	require('PHP/conn.php');
 	require('PHP/funciones.php');
 	$db = conectar();
 	if ($db)
@@ -26,6 +27,7 @@ else
 		$record_id = $_GET["id"];
 		$cv_principal = $_GET["cv_principal"];
 		$valor_null = "";
+		$sqlupd_c = ""; //Se inicializa pa variable para que no tenga problemas en 918
 		
 		switch ($contenido)
 		{
@@ -203,8 +205,8 @@ else
 			$sqlupd_c .= " ) ";
 		//	$sql =  pg_query($db, $sqlupd_c);
 		//	if (!$sql) { exit("Error al insertar la informacion  de atributos en el div 12"); }
-			$sqludp_c =  pg_query($db, $sqlupd_c);
-			if (!$sqludp_c) { exit("Error al insertar la informacion  de atributos en el div 12"); }
+			$sqlupd_c =  pg_query($db, $sqlupd_c);
+			if (!$sqlupd_c) { exit("Error al insertar la informacion  de atributos en el div 12"); }
 			
 			} break;
 			
@@ -917,7 +919,7 @@ else
 
 			if ($sqlupd_c != "" ) {
 				$mensajesAll = "Se ha registrado un colaborador.";} 
-			else {	$mensajesAll = "El Metadato a sido actualizado.";}
+			else{	$mensajesAll = "El Metadato a sido actualizado.";}
 
 		if ( $mensajesAll != "" ) 
 		{
