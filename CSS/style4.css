@@ -1,54 +1,66 @@
-
 html, body, div, h1, h2, h3,p, a, em, font, img,ol, ul, li, form, label, table {
   margin: 0;
   padding: 0;
   border: 0;
   outline: 0;
-  font-weight: inherit;
-  font-style: inherit;
-  font-size: 100%;
-  font-family: inherit;
+  font-weight: 400;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+	width:100%;
+	margin:0;
 }
 
 h1 {
   margin-bottom:15px;
   color:#ffffff;
-  border:outset;
-  background:#8A0808;
+  border:none;
+  background:#1b2a17;
   cursor:pointer;
   font-weight:bold;
   font-size:1.1em;
   margin-top:15px;
-  text-align:center;
+  
   }
   
 h3{
   margin-bottom:15px;
-  font-size:1em;
-  font-weight:bold;
+  font-size:1.2em;
+  font-weight:500;
   margin-top:10px;
-  margin-left:10px;
-  color: #8A0808;
-  font-family: Verdana, Geneva, sans-serif;
+  color: #1b2a17;
+  font-family: 'Oswald', sans-serif;
 }
 /*Estilo de divs*/
 #hd  {
   width:100%;
   height:100px;
-  background-image:url(images/fondo3.png);
+  background-color:#1b2a17;
+  padding:20px 0 15px;
 }
 
 #nu{
-  position:relative;
-  top:3px;
-  width:280px;
-	
+	width:100%;
+	padding:15px 0 15px;
+	background-color:#767f74;
+  	color:#1b2a17;
+	border:0;
+  
 }
 
 #lf{
   position:relative;
   top:30px;
   width:280px;
+	text-align:left;
+}
+
+.separador {
+	display:block;
+	height:1px;
+	margin:20px 0 10px 0;
+	background-color: #1b2a17;
 }
 
 #lf2{
@@ -56,10 +68,38 @@ h3{
   width:280px;
 }
 
+#lf2 p{
+	padding:10px 0 5px 15px;
+	font-size:1em;
+}
+
+#lf2 select {
+	margin-left:15px!important;
+}
+
+#lf h1 {
+	padding:10px 0 10px 15px;
+}
+
+#lf input[type="button"] {
+	display:inline-block;
+	width:100%;
+	text-align:left;
+	background-color: #767f74;
+	border-bottom-color:#fff;
+	border-top:none;
+	border-right:none;
+	border-left:none;
+	border-radius:0;
+	margin:0;
+	padding:5px 0 5px 15px;
+	
+} 
+
 #rg {
   position:absolute;
   left:300px;
-  top:120px;
+  top:190px;
   width:70%;
 }
 
@@ -74,12 +114,14 @@ h3{
 }
 
 #autores{
-  float:right;
-  margin-right:60px;
-  margin-left:890px;
-  margin-top:163px;
-  position:absolute;
-  font-weight:bold;
+    float: right;
+    margin-right: 60px;
+    margin-left: 890px;
+    margin-top: 163px;
+    position: absolute;
+    font-weight: bold;
+    left: 50px;
+    top: 34px;
 }
 
 #Ligas_www{
@@ -101,19 +143,32 @@ top:240px;
 
 
 /*Estilo de clases*/
+.title {
+	padding-left:32px;
+}
+
 .txtN1 {
-  font-family: Verdana, Geneva, sans-serif;
-  font-size: 1.1em;
-  color: #333;
-  text-align:center;
-  font-weight:bold;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.8em;
+  color: #fff;
+  text-align:left;
+  font-weight:300;
+	line-height:1;
 }
 .txtN2 {
-  font-family: Verdana, Geneva, sans-serif;
-  font-size: 0.9em;
-  color: #333;
-  text-align:center;
-  font-weight:bold;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.5em;
+  text-align:left;
+  font-weight:400;
+  line-height:1.5;
+  color:#d1d4d1;
+}
+
+.liner{
+	width: 50px;
+	height: 5px;
+	background-color: #080808;
+	margin-top:10px;
 }
 
 .extenso {
@@ -162,7 +217,7 @@ width: 100%;
 input[type="button"] {
   display:block;
   cursor: pointer;
-  font-family: inherit;
+  font-family: 'Open Sans', sans-serif;
   font-size: 100%;
   margin-bottom:15px;
   margin-left:40px;
@@ -197,7 +252,7 @@ input[type="submit"]{
 
 input, textarea, select, button {
   font-size: 100%;
-  font-family: inherit;
+  font-family: 'Open Sans', sans-serif;
 }
 
 textarea {
@@ -213,13 +268,13 @@ textarea {
 	overflow: auto;
 }
 p {
- text-align:center;
+ text-align:left;
 } 
 
 table {
-	font-weight:bold;
-	font-size:100%;
-	font-family: inherit;
+	font-weight:100;
+	font-size:1em;
+	font-family: 'Open Sans', sans-serif;
 } 
 
 
@@ -386,13 +441,20 @@ table {
 #name { margin-bottom:12px; width:95%; padding: .4em; }
 #nameDuplica { margin-bottom:12px; width:95%; padding: .4em; }
 .ui-dialog .ui-state-error { padding: .3em; }
-.validateTips { border: 1px solid transparent; padding: 0.3em; } 
+
+.validateTips { 
+	border: 1px solid transparent; 
+	padding: 5px 0; 
+} 
+
+.validateTips.cerrarsesion {
+	padding:15px 0;
+}
+
 .alert{ 
- position:absolute;
  width:60px;
- height:60px;
- background: #ECEADF;
- left:40px;
+ float:left;
+	margin-right:20px;
 
 
 }
@@ -403,11 +465,25 @@ table {
 
 }
 
+#cerrar_sesion {
+	height:auto!important;
+	padding:0 15px!important;
+}
+
 
 
 /*Estilos de la barra de progreso para adjuntar archivos sh*/
 
-form { display: block; margin: 20px auto; background: #eee; border-radius: 10px; padding: 15px }
+form { 
+	display: block; 
+	margin: 20px auto; 
+	background: #d1d4d1; 
+	border-radius: 10px; 
+	padding: 15px }
+
+form#formTerminoSesion {
+	margin:0 auto 8px auto;
+}
 
 .barra { background-color: #B4F5B4; width:0%; height:20px; border-radius: 3px; }
 .percentage { position:absolute; display:inline-block; top:3px; left:48%; }

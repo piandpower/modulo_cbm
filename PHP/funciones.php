@@ -321,7 +321,7 @@ function genera($campo, $class, $id , $cv_principal, $tipo , $toolTip)
 						if( $toolTip != "")
 						{
 							echo  "<input type=\"text\" name=\"$campo\"  id=\"$campo\" value= \"$val\" class = \"$class\" list=\"$campo\" onKeyPress=\"javascript:return validarCampos(event)\"/>";
-							echo "<img title =\"$toolTip\"src=\"CSS/images/icono-ayuda.gif\"/>";	
+							echo "<img title =\"$toolTip\"src=\"CSS/images/icono-ayuda.png\"/>";	
 						}
 						else
 						{
@@ -333,7 +333,7 @@ function genera($campo, $class, $id , $cv_principal, $tipo , $toolTip)
 						if($toolTip != "")
 						{
 							echo  " <input type=\"text\" name=\"$campo\"  id=\"$campo\" class = \"$class\" list=\"$campo\" onKeyPress=\"javascript:return validarCampos(event)\"/>";
-							echo"<img title =\"$toolTip\"src=\"CSS/images/icono-ayuda.gif\"/>";	
+							echo"<img title =\"$toolTip\"src=\"CSS/images/icono-ayuda.png\"/>";	
 						}
 						else
 						{
@@ -349,7 +349,7 @@ function genera($campo, $class, $id , $cv_principal, $tipo , $toolTip)
 					{	
 						if( $toolTip != "")
 						{
-							echo  " <input type=\"text\" name=\"$campo\" value= \"$val\" id=\"$campo\" class = \"$class\"/><img title =\"$toolTip\"src=\"CSS/images/icono-ayuda.gif\"/>";	
+							echo  " <input type=\"text\" name=\"$campo\" value= \"$val\" id=\"$campo\" class = \"$class\"/><img title =\"$toolTip\"src=\"CSS/images/icono-ayuda.png\"/>";	
 						}
 						else
 						{
@@ -360,7 +360,7 @@ function genera($campo, $class, $id , $cv_principal, $tipo , $toolTip)
 					{
 						if ($toolTip != "")
 						{
-							echo  " <input type=\"text\" name=\"$campo\" id=\"$campo\" class = \"$class\"/><img title =\"$toolTip\"src=\"CSS/images/icono-ayuda.gif\"/>"; 
+							echo  " <input type=\"text\" name=\"$campo\" id=\"$campo\" class = \"$class\"/><img title =\"$toolTip\"src=\"CSS/images/icono-ayuda.png\"/>"; 
 						}	
 						else
 						{
@@ -377,7 +377,7 @@ function genera($campo, $class, $id , $cv_principal, $tipo , $toolTip)
 						if( $toolTip != "")
 						{
 							echo  "<input type=\"text\" name=\"$campo\" id=\"$campo\" value= \"$val\" class = \"$class\" onKeyPress=\"javascript:return validarNro(event)\"/>";
-							echo "<img title =\"$toolTip\"src=\"CSS/images/icono-ayuda.gif\"/>";
+							echo "<img title =\"$toolTip\"src=\"CSS/images/icono-ayuda.png\"/>";
 						}
 						else
 						{
@@ -404,7 +404,7 @@ function genera($campo, $class, $id , $cv_principal, $tipo , $toolTip)
 					{	
 						if( $toolTip != "")
 						{
-							echo  " <textarea name=\"$campo\" rows=\"3\" cols=\"98\" onKeyPress=\"javascript:return validarCampos(event)\">$val</textarea><img title =\"$toolTip\"src=\"CSS/images/icono-ayuda.gif\"/>";	
+							echo  " <textarea name=\"$campo\" rows=\"3\" cols=\"98\" onKeyPress=\"javascript:return validarCampos(event)\">$val</textarea><img title =\"$toolTip\"src=\"CSS/images/icono-ayuda.png\"/>";	
 						}
 						else
 						{
@@ -415,7 +415,7 @@ function genera($campo, $class, $id , $cv_principal, $tipo , $toolTip)
 					{
 						if ($toolTip != "")
 						{ 	
-							echo  " <textarea name=\"$campo\" rows=\"3\" cols=\"98\" onKeyPress=\"javascript:return validarCampos(event)\"></textarea><img title =\"$toolTip\"src=\"CSS/images/icono-ayuda.gif\"/>";	
+							echo  " <textarea name=\"$campo\" rows=\"3\" cols=\"98\" onKeyPress=\"javascript:return validarCampos(event)\"></textarea><img title =\"$toolTip\"src=\"CSS/images/icono-ayuda.png\"/>";	
 						}
 						else
 						{
@@ -431,14 +431,14 @@ function genera($campo, $class, $id , $cv_principal, $tipo , $toolTip)
 					if($toolTip != "")	 
 					{ 
 						echo  " <input type=\"text\" name=\"$campo\" id=\"$campo\" class = \"$class\" list=\"$campo\" onKeyPress=\"javascript:return validarCampos(event)\"/>";
-						echo  "<img title =\"$toolTip\"src=\"CSS/images/icono-ayuda.gif\"/>";	
+						echo  "<img title =\"$toolTip\"src=\"CSS/images/icono-ayuda.png\"/>";	
 					}
 					else 				 { echo  " <input type=\"text\" name=\"$campo\" id=\"$campo\" class = \"$class\" list=\"$campo\" onKeyPress=\"javascript:return validarCampos(event)\"/>";	}
 				}
 	
 				if($tipo == "calendario")
 				{
-					if($toolTip != "")		{ echo  " <input type=\"text\" name=\"$campo\" id=\"$campo\" class = \"$class\"/><img title =\"$toolTip\"src=\"CSS/images/icono-ayuda.gif\"/>";   }
+					if($toolTip != "")		{ echo  " <input type=\"text\" name=\"$campo\" id=\"$campo\" class = \"$class\"/><img title =\"$toolTip\"src=\"CSS/images/icono-ayuda.png\"/>";   }
 					else					{ echo  " <input type=\"text\" name=\"$campo\" id=\"$campo\" class = \"$class\"/>";  }
 				}
 				
@@ -446,7 +446,7 @@ function genera($campo, $class, $id , $cv_principal, $tipo , $toolTip)
 				if($tipo == "numeros")
 				{
 					if($toolTip != "")		{ 	echo "<input type=\"text\" name=\"$campo\"  id=\"$campo\" onKeyPress=\"javascript:return validarNro(event)\" class = \"$class\"/>";
-												echo"<img title =\"$toolTip\"src=\"CSS/images/icono-ayuda.gif\"/>";}
+												echo"<img title =\"$toolTip\"src=\"CSS/images/icono-ayuda.png\"/>";}
 					else 					{ echo "<input type=\"text\" name=\"$campo\" id=\"$campo\" onKeyPress=\"javascript:return validarNro(event)\" class = \"$class\"/>";}
 				}			
 	
@@ -454,7 +454,7 @@ function genera($campo, $class, $id , $cv_principal, $tipo , $toolTip)
 				{
 					if($toolTip != "")		
 					{ 
-						echo " <textarea name=\"$campo\" id=\"$campo\" rows=\"3\" cols=\"98\" onKeyPress=\"javascript:return validarCampos(event)\"></textarea><img title =\"$toolTip\"src=\"CSS/images/icono-ayuda.gif\"/>"; 
+						echo " <textarea name=\"$campo\" id=\"$campo\" rows=\"3\" cols=\"98\" onKeyPress=\"javascript:return validarCampos(event)\"></textarea><img title =\"$toolTip\"src=\"CSS/images/icono-ayuda.png\"/>"; 
 					}
 					else{ echo " <textarea name=\"$campo\" id=\"$campo\" rows=\"3\" cols=\"98\" onKeyPress=\"javascript:return validarCampos(event)\"></textarea>";  }
 				}	
@@ -467,14 +467,14 @@ function genera($campo, $class, $id , $cv_principal, $tipo , $toolTip)
 				if($toolTip != "")	 
 				{ 
 					echo  " <input type=\"text\" name=\"$campo\" id=\"$campo\" class = \"$class\" list=\"$campo\" onKeyPress=\"javascript:return validarCampos(event)\"/>";
-					echo "<img title =\"$toolTip\"src=\"CSS/images/icono-ayuda.gif\"/>";	
+					echo "<img title =\"$toolTip\"src=\"CSS/images/icono-ayuda.png\"/>";	
 				}
 				else 				 { echo  " <input type=\"text\" name=\"$campo\" id=\"$campo\" class = \"$class\" list=\"$campo\" onKeyPress=\"javascript:return validarCampos(event)\"/>";	}
 			}
 
 			if($tipo == "calendario")
 			{
-				if($toolTip != "")		{ echo  " <input type=\"text\" name=\"$campo\" id=\"$campo\" class = \"$class\"/><img title =\"$toolTip\"src=\"CSS/images/icono-ayuda.gif\"/>";   }
+				if($toolTip != "")		{ echo  " <input type=\"text\" name=\"$campo\" id=\"$campo\" class = \"$class\"/><img title =\"$toolTip\"src=\"CSS/images/icono-ayuda.png\"/>";   }
 				else					{ echo  " <input type=\"text\" name=\"$campo\" id=\"$campo\" class = \"$class\"/>";  }
 			}
 			
@@ -482,7 +482,7 @@ function genera($campo, $class, $id , $cv_principal, $tipo , $toolTip)
 			if($tipo == "numeros")
 			{
 				if($toolTip != "")		{ 	echo "<input type=\"text\" name=\"$campo\"  id=\"$campo\" onKeyPress=\"javascript:return validarNro(event)\" class = \"$class\"/>";
-											echo "<img title =\"$toolTip\"src=\"CSS/images/icono-ayuda.gif\"/>";}
+											echo "<img title =\"$toolTip\"src=\"CSS/images/icono-ayuda.png\"/>";}
 				else 					{ echo "<input type=\"text\" name=\"$campo\"  id=\"$campo\" onKeyPress=\"javascript:return validarNro(event)\" class = \"$class\"/>";}
 			}			
 
@@ -490,7 +490,7 @@ function genera($campo, $class, $id , $cv_principal, $tipo , $toolTip)
 			{
 				if($toolTip != "")		
 				{ 
-					echo " <textarea name=\"$campo\" id=\"$campo\" rows=\"3\" cols=\"98\" onKeyPress=\"javascript:return validarCampos(event)\"></textarea><img title =\"$toolTip\"src=\"CSS/images/icono-ayuda.gif\"/>"; 
+					echo " <textarea name=\"$campo\" id=\"$campo\" rows=\"3\" cols=\"98\" onKeyPress=\"javascript:return validarCampos(event)\"></textarea><img title =\"$toolTip\"src=\"CSS/images/icono-ayuda.png\"/>"; 
 				}
 				else{ echo " <textarea name=\"$campo\" id=\"$campo\" rows=\"3\" cols=\"98\" onKeyPress=\"javascript:return validarCampos(event)\"></textarea>";  }
 			}	
@@ -603,14 +603,14 @@ function tabla($campo,$tamano,$id , $cv_principal ,$tema )
 							{ 						
 								echo  "<tr>";
 									echo  "<td><input type=\"text\" name=\"$campo_v\" value= \"$valor_tabla\" list=\"$campo\" size=\"$tamano\" class=\"clsAnchoTotal\"/></td>" ; 
-									echo  "<td align=\"left\"><input type=\"image\" src=\"CSS/images/borrar.gif\" class=\"clsEliminarFila\"></td>";
+									echo  "<td align=\"left\"><input type=\"image\" src=\"CSS/images/borrar.png\" class=\"clsEliminarFila\"></td>";
 								echo  "</tr>";
 							}
 						}
 						pg_free_result($res_tabla);
 						echo  "<tr>";
 							echo  "<td><input type=\"text\" name=\"$campo_v\" list=\"$campo\" size=\"$tamano\" class=\"clsAnchoTotal\"/></td>";
-							echo  "<td align=\"left\"><input type=\"image\" src=\"CSS/images/borrar.gif\" class=\"clsEliminarFila\"></td>";
+							echo  "<td align=\"left\"><input type=\"image\" src=\"CSS/images/borrar.png\" class=\"clsEliminarFila\"></td>";
 						echo  "</tr>"; 				
 					}
 				}// FIN ID
@@ -618,7 +618,7 @@ function tabla($campo,$tamano,$id , $cv_principal ,$tema )
 				{
 					echo  "<tr>";
 						echo  "<td><input type=\"text\" name=\"$campo_v\" list=\"$campo\" size=\"$tamano\" class=\"clsAnchoTotal\"/></td>";
-						echo  "<td align=\"left\"><input type=\"image\" src=\"CSS/images/borrar.gif\" class=\"clsEliminarFila\"></td>";
+						echo  "<td align=\"left\"><input type=\"image\" src=\"CSS/images/borrar.png\" class=\"clsEliminarFila\"></td>";
 					echo  "</tr>";
 				}
 
@@ -755,7 +755,7 @@ echo  "<div id=$tema>";
 								 echo  "<td><input type=\"hidden\" name=\"$campo_id\" value= \"$val_id\" list=\"$idorigen\"  class=\"clsAnchoTotal\"/></td>";
 								 tabla_da($val_id , $cv_principal);	
 									 
-								echo  "<td align=\"right\"><input type=\"image\" src=\"CSS/images/borrar.gif\" class=\"clsEliminarFila\"></td>";
+								echo  "<td align=\"right\"><input type=\"image\" src=\"CSS/images/borrar.png\" class=\"clsEliminarFila\"></td>";
 							echo  "</tr>"; 
 						} // FIN WHILE
 
@@ -778,7 +778,7 @@ echo  "<div id=$tema>";
 						echo  "<td><input type=\"hidden\" name=\"$campo_id\" value= \"$val_id\" list=\"$idorigen\"  class=\"$class\"/></td>";
 						
 						tabla_da($val_id , $cv_principal);				  
-						echo  "<td align=\"right\"><input type=\"image\" src=\"CSS/images/borrar.gif\" class=\"clsEliminarFila\"></td>";
+						echo  "<td align=\"right\"><input type=\"image\" src=\"CSS/images/borrar.png\" class=\"clsEliminarFila\"></td>";
 					echo  "</tr>";
 					
 				} // FIN ID
@@ -801,7 +801,7 @@ echo  "<div id=$tema>";
 						echo  "<td><input type=\"hidden\" name=\"$campo_id\" value= \"$val_id\" list=\"$idorigen\"  class=\"$class\"/></td>";
 						
 						tabla_da($val_id , $cv_principal);				  
-						echo  "<td align=\"right\"><input type=\"image\" src=\"CSS/images/borrar.gif\" class=\"clsEliminarFila\"></td>";
+						echo  "<td align=\"right\"><input type=\"image\" src=\"CSS/images/borrar.png\" class=\"clsEliminarFila\"></td>";
 					echo  "</tr>";
 				}	// fin else
 			} // FIN DB
@@ -892,20 +892,20 @@ function tabla_da($val_ido , $cv_principal)
 									{ 
 										echo  "<tr>";
 											echo  "<td><input type=\"text\" name=\"$campo_v\" value= \"$valor_tabla_da\" list=\"$campo\" size=\"$tamano\" class=\"clsAnchoTotal\"/></td>" ;
-											echo  "<td align=\"right\"><input type=\"image\" src=\"CSS/images/borrar.gif\" class=\"clsEliminarFila\"></td>";
+											echo  "<td align=\"right\"><input type=\"image\" src=\"CSS/images/borrar.png\" class=\"clsEliminarFila\"></td>";
 										echo  "</tr>";
 									}
 								}
 								echo  "<tr>";
 									echo  "<td><input type=\"text\" name=\"$campo_v\" list=\"$campo\" size=\"$tamano\" class=\"clsAnchoTotal\"/></td>" ;
-								  	echo  "<td align=\"right\"><input type=\"image\" src=\"CSS/images/borrar.gif\" class=\"clsEliminarFila\"></td>";
+								  	echo  "<td align=\"right\"><input type=\"image\" src=\"CSS/images/borrar.png\" class=\"clsEliminarFila\"></td>";
 								echo  "</tr>";
 							}// FIN PG_NUM_ROWS	
 							else
 							{
 								echo  "<tr>";
 									echo  "<td><input type=\"text\" name=\"$campo_v\" list=\"$campo\" size=\"$tamano\" class=\"clsAnchoTotal\"/></td>" ;
-								  	echo  "<td align=\"right\"><input type=\"image\" src=\"CSS/images/borrar.gif\" class=\"clsEliminarFila\"></td>";
+								  	echo  "<td align=\"right\"><input type=\"image\" src=\"CSS/images/borrar.png\" class=\"clsEliminarFila\"></td>";
 								echo  "</tr>";
 							}
 						}
@@ -1027,7 +1027,7 @@ echo  "<div id=$tema>";
 					echo  "</td>";
 					echo  "<td width=\"1\">";
 					
-					echo  "<td align=\"center\" width=\"32\"><input type=\"image\" src=\"CSS/images/borrar.gif\" class=\"clsEliminarFila\"></td>"; 
+					echo  "<td align=\"center\" width=\"32\"><input type=\"image\" src=\"CSS/images/borrar.png\" class=\"clsEliminarFila\"></td>"; 
 					echo  "</td>";
 					echo  "</tr>";
 						
@@ -1061,7 +1061,7 @@ echo  "<div id=$tema>";
 		echo  "</td>";
 		echo  "<td width=\"1\">";
 		
-		echo  "<td align=\"center\" width=\"32\"><input type=\"image\" src=\"CSS/images/borrar.gif\" class=\"clsEliminarFila\"></td>";
+		echo  "<td align=\"center\" width=\"32\"><input type=\"image\" src=\"CSS/images/borrar.png\" class=\"clsEliminarFila\"></td>";
 		echo  "</td>";
 		echo  "</tr>"; 	
 		
@@ -1192,7 +1192,7 @@ function tabla_tc($corto,$validt,$tema ,$cv_principal)
 										echo  "<td><input type=\"text\" name=\"$campo_i\" value= \"$val_i\" list=\"$issue\"  class=\"$corto\"/></td>";
 										echo  "<td><input type=\"hidden\" name=\"$campo_id\" value= \"$val_id\" list=\"$idtaxon\"  class=\"$corto\"/></td>";  //hidden
 										echo  "<td><input type=\"hidden\" name=\"$campo_ia\" value= \"$val_ia\" list=\"$idautaxon\"  class=\"$corto\"/></td>"; //hidden
-										echo  "<td align=\"right\"><input type=\"image\" src=\"CSS/images/borrar.gif\" class=\"clsEliminarFila\"></td>";
+										echo  "<td align=\"right\"><input type=\"image\" src=\"CSS/images/borrar.png\" class=\"clsEliminarFila\"></td>";
 										tabla_ta($corto ,$val_ia,$validt,$cv_principal);
 									echo  "</tr>";
 								}// fin del ciclo while
@@ -1210,7 +1210,7 @@ function tabla_tc($corto,$validt,$tema ,$cv_principal)
 								 echo  "<td><input type=\"text\" name=\"$campo_i\" list=\"$issue\"  class=\"$corto\"/></td>";
 								 echo  "<td><input type=\"hidden\" name=\"$campo_id\" value= \"t0\" list=\"$idtaxon\"  class=\"$corto\"/></td>";  //hidden
 								 echo  "<td><input type=\"hidden\" name=\"$campo_ia\" value= \"a0\" list=\"$idautaxon\"  class=\"$corto\"/></td><br>"; //hidden
-								 echo  "<td align=\"right\"><input type=\"image\" src=\"CSS/images/borrar.gif\" class=\"clsEliminarFila\"></td>";
+								 echo  "<td align=\"right\"><input type=\"image\" src=\"CSS/images/borrar.png\" class=\"clsEliminarFila\"></td>";
 								 tabla_ta($corto ,"a0",$validt,$cv_principal);
 					echo  "</tr>";
 					
@@ -1292,7 +1292,7 @@ function tabla_ta($corto ,$val_ido,$validt,$cv_principal)
 									{
 										echo  "<tr>";
 										  	echo  "<td><input type=\"text\" name=\"$campo_v\" value= \"$valor\" list=\"$campo\"  class=\"$corto\"/></td>";
-											echo  "<td align=\"right\"><input type=\"image\" src=\"CSS/images/borrar.gif\" class=\"clsEliminarFila\"></td>";
+											echo  "<td align=\"right\"><input type=\"image\" src=\"CSS/images/borrar.png\" class=\"clsEliminarFila\"></td>";
 										echo  "</tr>"; 
 									}	
 								}// fin while
@@ -1301,7 +1301,7 @@ function tabla_ta($corto ,$val_ido,$validt,$cv_principal)
 					}
 					echo  "<tr>";
 						echo  "<td><input type=\"text\" name=\"$campo_v\" list=\"$campo\"  class=\"$corto\"/></td>";
-						echo  "<td align=\"right\"><input type=\"image\" src=\"CSS/images/borrar.gif\" class=\"clsEliminarFila\"></td>";
+						echo  "<td align=\"right\"><input type=\"image\" src=\"CSS/images/borrar.png\" class=\"clsEliminarFila\"></td>";
 					echo  "</tr>";
 					
 		$datalist = sql("z_origin",$val_ido,$cv_principal , 0);
@@ -1381,7 +1381,7 @@ function tabla_a($class,$id,  $cv_principal ,$tema)
 							  echo  "<td width=\"202\"><input type=\"text\" name=\"$campo_f\" value= \"$val_f\" list=\"$fuente\"  class=\"$class\"/></td>";
 							  echo  "<td width=\"153\"><input type=\"text\" name=\"$campo_u\" value= \"$val_u\" list=\"$unida\"  class=\"$class\"/></td>";
 							  echo  "<td width=\"121\"><input type=\"text\" name=\"$campo_t\" value= \"$val_t\" list=\"$tipo\"  class=\"$class\"/></td>";
-							  echo  "<td align=\"right\" width=\"17\"><input type=\"image\" src=\"CSS/images/borrar.gif\" class=\"clsEliminarFila\"></td>";
+							  echo  "<td align=\"right\" width=\"17\"><input type=\"image\" src=\"CSS/images/borrar.png\" class=\"clsEliminarFila\"></td>";
 							echo  "</tr>";
 						}// FIN WHILE
 					} // FIN PG_NUM_ROWS
@@ -1391,7 +1391,7 @@ function tabla_a($class,$id,  $cv_principal ,$tema)
 						echo  "<td width=\"202\"><input type=\"text\" name=\"$campo_f\" list=\"$fuente\"  class=\"$class\"/></td>";
 						echo  "<td width=\"153\"><input type=\"text\" name=\"$campo_u\" list=\"$unida\"  class=\"$class\"/></td>";
 						echo  "<td width=\"121\"><input type=\"text\" name=\"$campo_t\" list=\"$tipo\"  class=\"$class\"/></td>";
-						echo  "<td align=\"right\" width=\"17\"><input type=\"image\" src=\"CSS/images/borrar.gif\" class=\"clsEliminarFila\"></td>";
+						echo  "<td align=\"right\" width=\"17\"><input type=\"image\" src=\"CSS/images/borrar.png\" class=\"clsEliminarFila\"></td>";
 					echo  "</tr>";
 				} // FIN ID
 				else 
@@ -1402,7 +1402,7 @@ function tabla_a($class,$id,  $cv_principal ,$tema)
 						echo  "<td width=\"202\"><input type=\"text\" name=\"$campo_f\" list=\"$fuente\"  class=\"$class\"/></td>";
 						echo  "<td width=\"153\"><input type=\"text\" name=\"$campo_u\" list=\"$unida\"  class=\"$class\"/></td>";
 						echo  "<td width=\"121\"><input type=\"text\" name=\"$campo_t\" list=\"$tipo\"  class=\"$class\"/></td>";
-						echo  "<td align=\"right\" width=\"17\"><input type=\"image\" src=\"CSS/images/borrar.gif\" class=\"clsEliminarFila\"></td>";
+						echo  "<td align=\"right\" width=\"17\"><input type=\"image\" src=\"CSS/images/borrar.png\" class=\"clsEliminarFila\"></td>";
 					echo  "</tr>";
 				}
 						
