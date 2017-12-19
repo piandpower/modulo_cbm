@@ -52,32 +52,33 @@ $db = conectar();
     <title>Inicio</title>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
     <link rel="stylesheet" href="CSS/estilo.css" media="all" />
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Oswald:300,500,700" rel="stylesheet">
     <script src="Javascript/jquery-1.7.1.min.js"></script>
     <script src="Javascript/scriptIndex.js"></script>
   </head>
   <body>
     <div>
-      <div id="hd">
-		<h1>Dirección General de Geomática</h1>
-		<h1>Subcoordinación de Sistemas de Información Geográfica</h1>
-      </div>
+      
       <div id="cn"> 
-<h1>Sistema integral de información cartográfica</h1> 
-<h1>y geoespacial</h1>
-        <img class="cn" src ="CSS/images/logo.jpg"/>	
-	   <form method="post"  action="">
+		<h1>Dirección General de Geomática</h1>
+		<h2>Subcoordinación de Sistemas de Información Geográfica</h2>
+		<img class="cn" src ="CSS/images/logo-conabio-bco-v.png"/>	
+		<h2>Sistema integral de información<br>cartográfica y geoespacial</h2>
+       
+	   <form method="post" action="">
 		  <table width="631" border="0">
             <tr>
               <td width="220"></td>
-              <td width="72">Usuario: </td>
+              <td width="72" valaign="bottom" align="right">Usuario:</td>
               <td width="325"><input name="usuario" id="usuario" type="text"/></td>
             </tr>
             <tr>
               <td>&nbsp;</td>
-              <td>Contraseña:</td>
+              <td valaign="bottom" align="right">Contraseña:</td>
               <td><input name="password" type="password" id="password"/></td>
             </tr>
-            <tr>
+            <tr> 
               <td>&nbsp;</td>
               <td>&nbsp;</td>
               <td><?php

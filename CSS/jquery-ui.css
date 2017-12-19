@@ -262,7 +262,7 @@
 
 .ui-widget-content {
 	border: 1px solid #d9d6c4;
-	background: #eceadf url("images/ui-bg_fine-grain_10_eceadf_60x60.png") 50% 50% repeat;
+	background: #EAEAEA;
 	color: #000000;
 }
 .ui-widget-content a {
@@ -303,8 +303,8 @@
 .ui-state-focus,
 .ui-widget-content .ui-state-focus,
 .ui-widget-header .ui-state-focus {
-	border: 1px solid #654b24;
-	background: #CBC9C5 ;
+	border: 1px solid #84181b;
+	background: #84181b;
 	font-weight: bold;
 	color: #ffffff;
 }
@@ -631,7 +631,7 @@
 
 /* Overlays */
 .ui-widget-overlay {
-	background: #6e4f1c url("images/ui-bg_diagonal-maze_20_6e4f1c_10x10.png") 50% 50% repeat;
+	background: #767f74;
 	opacity: .6;
 	filter: Alpha(Opacity=60);
 }
