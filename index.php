@@ -67,7 +67,7 @@ $db = conectar();
 		<h2>Sistema integral de información<br>cartográfica y geoespacial</h2>
        
 	   <form method="post" action="">
-		  <table width="631" border="0">
+		  <table width="631" border="0" align="center">
             <tr>
               <td width="220"></td>
               <td width="72" valaign="bottom" align="right">Usuario:</td>
