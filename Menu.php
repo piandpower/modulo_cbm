@@ -329,11 +329,11 @@ function habilitar() {
 	<div id="hd">
     	<table width="1200px">
           <tr>
-            <td width="20%" valign="middle" align="center"><a href="http://www.biodiversidad.gob.mx/" target="_blank"><img src="CSS/images/logo-conabio-bco.png" width="200"></a></td>
+            <td width="20%" valign="middle" align="center"><a href="http://www.biodiversidad.gob.mx/" target="_blank"><img src="CSS/images/logo_conabio.png" width="400"></a></td>
             <td width="80%" class="title"><span>
-			  <p class="txtN1">Direcci&oacute;n General de Geom&aacute;tica</p>
+			  <p class="txtN2">Direcci&oacute;n General de Geom&aacute;tica</p>
               <p class="txtN2">Subcoordinaci&oacute;n de Sistemas de Informaci&oacute;n Geogr&aacute;fica</p>
-			  <div class="liner"></div>
+			  <p class="txtN2">Corredor Biológico Mesoamericano</p>
 <!--<?php echo $iden ;?><br />
 <?php echo $cv_principal;?>	
 <?php echo $tooltipNomArchivo; ?> -->

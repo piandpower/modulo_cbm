@@ -11,8 +11,9 @@ body {
 	width:100%;
 	margin:0;
 /*  background:url(images/img-fondo-dark.jpg)top fixed no-repeat;
-  background-size:cover;*/
-  background:rgba(0,0,0,0.7); 
+  background-size:cover;
+  background:rgba(0,0,0,0.7); */
+  background:#4e84aa1a; 
 
 }
 
@@ -20,7 +21,7 @@ h1 {
   margin-bottom:15px;
   color:#ffffff;
   border:none;
-  background:#1b2a17;
+  background:#4a84aa;
   cursor:pointer;
   font-weight:bold;
   font-size:1.1em;
@@ -39,15 +40,17 @@ h3{
 /*Estilo de divs*/
 #hd  {
   width:100%;
-  height:100px;
-  background-color:#1b2a17;
+  height:150px;
+/*  background-color:#1b2a17; */
+  background:url(images/img-fondo.jpg)top fixed no-repeat;
+  background-size:cover;
   padding:20px 0 15px;
 }
 
 #nu{
 	width:100%;
 	padding:15px 0 15px;
-	background-color:#767f74;
+	background-color:#4a84aa80;
   	color:#1b2a17;
 	border:0;
   
@@ -89,7 +92,7 @@ h3{
 	display:inline-block;
 	width:100%;
 	text-align:left;
-	background-color: #767f74;
+	background-color: #4a84aa80;
 	border-bottom-color:#fff;
 	border-top:none;
 	border-right:none;
@@ -109,12 +112,12 @@ h3{
 
 #rg > div{
   display:none;
-  background-color: #8A0808;
+  background-color: #8A080800;
   z-index:1;
 }
 
 #contenido {
-  position:absolute;
+  position:relative;
 }
 
 #autores{
@@ -165,7 +168,7 @@ top:240px;
   text-align:left;
   font-weight:400;
   line-height:1.5;
-  color:#d1d4d1;
+  color:#109010;
 }
 
 .liner{
@@ -480,8 +483,8 @@ table {
 
 form { 
 	display: block; 
-	margin: 20px auto; 
-	background: #d1d4d1; 
+	margin: 77px auto; 
+	background: #4a84aa30; 
 	border-radius: 10px; 
 	padding: 15px }
 
