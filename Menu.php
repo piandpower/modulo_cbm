@@ -957,15 +957,24 @@ map.renderSync();
 </div>
 </div>
 
-<!------------------------------Abre zona de Generar plantilla     --------------------->
 
              <div id="div15"  class="element">
 
                 <div id="contenido">
 
-                    <form name="datos" method="POST" >
-                        <input type = "submit" value = "Generar Plantilla"  id="RegistroColaborador" onclick = "this.form.action = 'guardar.php?hoja=RegistroColaborador&id=<?php echo $id;?>&cv_principal=<?php echo $cv_principal;?>'"/>
-							<table width="869">
+
+<form>                                                  
+                                       <p class="txtN1">Generar Plantilla</p>
+                                       </form>
+                                      
+  <form class="mapTemplate" id="mapTemplate" action="mapTemplate/mapTemplate.php"  method="post" enctype="multipart/form-data">
+    <input type="submit" id="btn_mapTemplate" name="btn_mapTemplate" value="Generar">   
+
+
+
+
+
+                            <table width="869">
                             	<tr >
                                    	<td width="200">&nbsp;</td>
                                     <td width="657">&nbsp;</td>
@@ -995,19 +1004,6 @@ map.renderSync();
  
                           	</table>
                     </form>
-<!--
-<div id="nameOfFile">
-                                      <form>                                                  
-                                       <p class="txtN1">Generar plantilla <?php echo $nameFileSession;?>.jpg</p>
-                                       </form>
-                                      
-  <form class="formulario_plantilla" id="formulario_plantilla" action="plantilla.php"  method="post" enctype="multipart/form-data">
-	<input type="submit" id="boton_generar" name="boton_generar" value="Generar">                                       
-  </form>
-
-</div> 
--->
-
 </div>
 </div>
 
