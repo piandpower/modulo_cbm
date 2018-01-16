@@ -969,11 +969,6 @@ map.renderSync();
                                       
   <form class="mapTemplate" id="mapTemplate" action="mapTemplate/mapTemplate.php"  method="post" enctype="multipart/form-data">
     <input type="submit" id="btn_mapTemplate" name="btn_mapTemplate" value="Generar">   
-
-
-
-
-
                             <table width="869">
                             	<tr >
                                    	<td width="200">&nbsp;</td>
@@ -1006,7 +1001,6 @@ map.renderSync();
                     </form>
 </div>
 </div>
-
 <!------------------------------Cierra zona de Generar plantilla    ---------------------->
              <div id="div6"  class="element">
              	<div id="contenido">
