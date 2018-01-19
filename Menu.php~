@@ -58,6 +58,7 @@ else
     $datumFileSession = etiquetas("c_datum",$id , $cv_principal);
 
     $_SESSION['datumFileSession'] = $datumFileSession;
+    $_SESSION['nombreUsuario'] = $nombreUsuario;
 
 
 ?>
@@ -975,15 +976,8 @@ map.renderSync();
                                     <td width="657">&nbsp;</td>
                                                        <tr><td>Nombre de proyecto</td>
                                    <td><select id="nombreProy" name="nombreProy">
-                                 <option value="jm022">jm022</option>
                                  <option value="jm053">jm053</option>
-                                 <option value="jm023">jm023</option>
-                                 <option value="jm024">jm024</option>
-                                 <option value="jm025">jm025</option>
-                                 <option value="jm026">jm026</option>
-                                 <option value="jm027">jm027</option>
-                                 <option value="jm028">jm028</option>
-                                 <option value="jm029">jm029</option>
+                                 <option value="jm353">jm353</option>
                                     </select></td>
                                 </tr>
                                                        <tr><td>Tipo de proyecto</td>
