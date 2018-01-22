@@ -373,13 +373,35 @@ for shapefile in lista_shapes:
 
         #mxd.saveACopy(r"J:\\USUARIOS\\SISTEM\\GMAGALLANES\\template\\mxd\\"+filename+".mxd")
         #mxd.saveACopy(r"C:\\Users\\slara\\Desktop\\dP\\mxd\\"+filename+".mxd")
-        mxd.saveACopy(r"C:\\Users\\ssocialsig.CONABIO\\Desktop\\test_mxd\\"+filename+".mxd")
- #       mxd.save()
+#        mxd.saveACopy(r"C:\\Users\\ssocialsig.CONABIO\\Desktop\\test_mxd\\"+filename+".mxd")
+
+
+
+
+
+
+
+
+
+
+
+
+
+#       mxd.save()
 
         #arcpy.mapping.ExportToPNG(mxd, r"C:\\Users\\ssocialsig.CONABIO\\Desktop\\"+filename+".png", resolution=300)
         #arcpy.mapping.ExportToPNG(mxd, r"C:\\Users\\slara\\Desktop\\dP\\png\\"+filename+".png", resolution=300)
-        arcpy.mapping.ExportToPNG(mxd, r"C:\\Users\\ssocialsig.CONABIO\\Desktop\\test_png\\"+filename+".png", resolution=300)
-    
+#        arcpy.mapping.ExportToPNG(mxd, r"C:\\Users\\ssocialsig.CONABIO\\Desktop\\test_png\\"+filename+".png", resolution=300)
+
+
+
+
+
+
+
+
+
+
         for df in arcpy.mapping.ListDataFrames(mxd):
             for lyr in arcpy.mapping.ListLayers(mxd, "", df):
                 if lyr.name == filename:        
@@ -499,13 +521,30 @@ for shapefile in lista_shapes:
         #mxd_P.saveACopy(r"J:\\USUARIOS\\SISTEM\\GMAGALLANES\\template\\mxd\\"+filename+".mxd")
         #mxd_P.saveACopy(r"J:\\USUARIOS\\SISTEM\\GMAGALLANES\\template\\mxd_recolecta\\"+filename+".mxd")
         #mxd_P.saveACopy(r"C:\\Users\\slara\\Desktop\\sR\\mxd\\"+filename+".mxd")
-        mxd_P.saveACopy(r"C:\\Users\\ssocialsig.CONABIO\\Desktop\\test_mxd\\"+filename+".mxd")
+#        mxd_P.saveACopy(r"C:\\Users\\ssocialsig.CONABIO\\Desktop\\test_mxd\\"+filename+".mxd")
+
+
+
+
+
+
+
+
 
         #arcpy.mapping.ExportToPNG(mxd_P, r"J:\\USUARIOS\\SISTEM\\GMAGALLANES\\template\\png\\"+filename+".png", resolution=300)
         #arcpy.mapping.ExportToPNG(mxd_P, r"J:\\USUARIOS\\SISTEM\\GMAGALLANES\\template\\png_recolecta\\"+filename+".png", resolution=300)
 
         #arcpy.mapping.ExportToPNG(mxd_P, r"C:\\Users\\slara\\Desktop\\sR\\png\\"+filename+".png", resolution=300)
-        arcpy.mapping.ExportToPNG(mxd_P, r"C:\\Users\\ssocialsig.CONABIO\\Desktop\\test_png\\"+filename+".png", resolution=300)
+#        arcpy.mapping.ExportToPNG(mxd_P, r"C:\\Users\\ssocialsig.CONABIO\\Desktop\\test_png\\"+filename+".png", resolution=300)
+
+
+
+
+
+
+
+
+
 
 
         for df_P in arcpy.mapping.ListDataFrames(mxd_P):

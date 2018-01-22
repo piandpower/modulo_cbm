@@ -60,7 +60,24 @@ else
     $_SESSION['datumFileSession'] = $datumFileSession;
     $_SESSION['nombreUsuario'] = $nombreUsuario;
 
+    if ($nombreUsuario == 'Shareni Lara')
+        {
+$nom = 'slara';
+}
 
+else if ($nombreUsuario == 'ssocialsig')
+        {
+$nom = 'ssocialsig';
+}
+
+else if ($nombreUsuario == 'Verena Ekaterina Benítez')
+        {
+$nom = 'vbenitez';
+}
+else { 
+
+    $nom = 'nombreUsuario';
+}
 ?>
 
 
@@ -994,6 +1011,23 @@ map.renderSync();
                           	</table>
                     </form>
 </div>
+
+<form>
+<p>Instrucciones:</p>
+<p>1. Elige el proyecto que se te asignó.</p>
+<p>2. Genera la plantilla. Ésta se descargará en tu máquina.</p>
+<p>3. En tu ArcGis abre tu consula de Python y ejecuta el script que acabas de descargar. Solo escribe correctamente el código que se muestra como en el ejemplo de abajo:</p>
+</form>
+<form>
+
+<?php echo "<p class = 'txtN2'>execfile(r'C://Users//".$nom."//Escritorio//nombre_del_archivo.py')</p>" ?>
+<p></p>
+<p></p>
+</form>
+
+
+
+
 </div>
 <!------------------------------Cierra zona de Generar plantilla    ---------------------->
              <div id="div6"  class="element">
