@@ -74,6 +74,10 @@ else if ($nombreUsuario == 'Verena Ekaterina Benítez')
         {
 $nom = 'vbenitez';
 }
+else if ($nombreUsuario == 'Gustavo')
+        {
+$nom = 'CPR';
+}
 else { 
 
     $nom = 'nombreUsuario';
@@ -993,8 +997,38 @@ map.renderSync();
                                     <td width="657">&nbsp;</td>
                                                        <tr><td>Nombre de proyecto</td>
                                    <td><select id="nombreProy" name="nombreProy">
+                                 <option value="jm016">jm016</option>
+                                 <option value="jm017">jm017</option>
+                                 <option value="jm018">jm018</option>
+                                 <option value="jm019">jm019</option>
+                                 <option value="jm022">jm022</option>
+                                 <option value="jm024">jm024</option>
+                                 <option value="jm025">jm025</option>
+                                 <option value="jm027">jm027</option>
+                                 <option value="jm031">jm031</option>
+                                 <option value="jm032">jm032</option>
+                                 <option value="jm033">jm033</option>
+                                 <option value="jm034">jm034</option>
+                                 <option value="jm035">jm035</option>
+                                 <option value="jm036">jm036</option>
+                                 <option value="jm037">jm037</option>
+                                 <option value="jm039">jm039</option>
+                                 <option value="jm040">jm040</option>
+                                 <option value="jm041">jm041</option>
+                                 <option value="jm042">jm042</option>
+                                 <option value="jm043">jm043</option>
+                                 <option value="jm044">jm044</option>
+                                 <option value="jm050">jm050</option>
+                                 <option value="jm052">jm052</option>
                                  <option value="jm053">jm053</option>
-                                 <option value="jm353">jm353</option>
+                                 <option value="jm055">jm055</option>
+                                 <option value="jm056">jm056</option>
+                                 <option value="jm057">jm057</option>
+                                 <option value="jm058">jm058</option>
+                                 <option value="jm061">jm061</option>
+                                 <option value="jm065">jm065</option>
+                                 <option value="jm068">jm068</option>
+                                 <option value="jm071">jm071</option>
                                     </select></td>
                                 </tr>
                                                        <tr><td>Tipo de proyecto</td>
@@ -1020,7 +1054,7 @@ map.renderSync();
 </form>
 <form>
 
-<?php echo "<p class = 'txtN2'>execfile(r'C://Users//".$nom."//Escritorio//nombre_del_archivo.py')</p>" ?>
+<?php echo "<p class = 'txtN2'>execfile(r'C://Users//".$nom."//Desktop//nombre_del_archivo_que_descargaste.py')</p>" ?>
 <p></p>
 <p></p>
 </form>

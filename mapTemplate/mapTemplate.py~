@@ -349,7 +349,7 @@ for shapefile in lista_shapes:
         if existImage == True:
             for img in arcpy.mapping.ListLayoutElements(mxd, "PICTURE_ELEMENT"):
 
-                img.sourceImage = (r"J:\\USUARIOS\\SISTEM\\JMDAVILA\\Plantilla\\jm034\\Cartografia_final\\Imagenes_especies\\distribucionPotencial\\"+filename+".jpg")
+#                img.sourceImage = (r"J:\\USUARIOS\\SISTEM\\JMDAVILA\\Plantilla\\jm034\\Cartografia_final\\Imagenes_especies\\distribucionPotencial\\"+filename+".jpg")
 
                 img.elementPositionX = 0.5082
                 img.elementPositionY = 10.17
@@ -490,12 +490,12 @@ for shapefile in lista_shapes:
 
 
 
-
-
-
         if existImagep == True:
             for img in arcpy.mapping.ListLayoutElements(mxd_P, "PICTURE_ELEMENT"):
-                img.sourceImage = (r"J:\\USUARIOS\\SISTEM\\JMDAVILA\\Plantilla\\jm034\\Cartografia_final\\imagenes_especies\\sitiosDeRecolecta\\"+filename+".jpg")
+#                img.sourceImage = (r"J:\\USUARIOS\\SISTEM\\JMDAVILA\\Plantilla\\jm034\\Cartografia_final\\imagenes_especies\\sitiosDeRecolecta\\"+filename+".jpg")
+
+
+
                 img.elementPositionX = 0.5082
                 img.elementPositionY = 10.174
                 img.elementWidth = 4.09
