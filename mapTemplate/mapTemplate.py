@@ -20,7 +20,7 @@ import subprocess
 #conn = pg.connect(dbname='metadatos', user='gmagallanes', passwd='gmagallanes-2016', host='172.16.1.179')
 
 #conn = pg.connect(dbname='jm004', user='postgres', passwd='sig123456', host='200.12.166.29')
-conn = pg.connect(dbname='distribucionJM034', user='postgres', passwd='sig123456', host='200.12.166.29')
+#conn = pg.connect(dbname='distribucionJM034', user='postgres', passwd='sig123456', host='200.12.166.29')
 #conn = pg.connect(dbname='sitiosJM034', user='postgres', passwd='sig123456', host='200.12.166.29')
 
 ########termina conexion base de datos y query#################

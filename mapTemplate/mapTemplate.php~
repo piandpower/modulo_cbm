@@ -10,6 +10,11 @@ $tipo_soft = $_POST['software'];
 
 //Este script comienza como todo array desde cero, y el ciclo foreach agrega un lugar de mas. Con esto indicar el lugar n quedara en el lugar n+2
 
+
+$numero_proy = explode("jm", $nom_proy);
+
+$numeral = $numero_proy[1];
+
 $fichero = 'mapTemplate.py';
 $dir = date("Y-m-d")."_".date("H:i:s")."_".$fichero;
 
@@ -62,12 +67,14 @@ if ($tipo_proy == dist){
     $layer = "    newlayer1 = arcpy.mapping.Layer(r'T:\\\\jm\\\\".$nom_proy."\\\\dist\\\\'+shapefile+'')";
     $desc = "    desc = arcpy.Describe(r'T:\\\\jm\\\\".$nom_proy."\\\\dist\\\\'+shapefile+'')";
     $simbolo = "        symbologyLayer = (r'J:\\\\USUARIOS\\\\SISTEM\\\\GMAGALLANES\\\\template\\\\base\\\\color_dp.lyr')";
+    $conn = "conn = pg.connect(dbname='dist_".$numeral."', user='postgres', passwd='sig123456', host='200.12.166.29')";
 
 } else {
     $lista_shapes = "lista_shapes = os.listdir(r'T:\\\\jm\\\\".$nom_proy."\\\\sitios\\\\shp')";
     $layer = "    newlayer1 = arcpy.mapping.Layer(r'T:\\\\jm\\\\".$nom_proy."\\\\sitios\\\\'+shapefile+'')";
     $desc = "    desc = arcpy.Describe(r'T:\\\\jm\\\\".$nom_proy."\\\\sitios\\\\'+shapefile+'')";
     $simbolo = "        symbologyLayer = (r'J:\\\\USUARIOS\\\\SISTEM\\\\GMAGALLANES\\\\template\\\\base\\\\color_sr.lyr')";
+    $conn = "conn = pg.connect(dbname='sitios_".$numeral."', user='postgres', passwd='sig123456', host='200.12.166.29')";
 
 }
 
@@ -77,7 +84,7 @@ $existImage_sr = "        existImagep = os.path.isfile(r'T:\\\\jm\\\\".$nom_proy
 $sourseImage_dp = "                img.sourseImage = (r'T:\\\\jm\\\\".$nom_proy."\\\\img\\\\'+filename+'.jpg')";
 $sourseImage_sr = "                img.sourseImage = (r'T:\\\\jm\\\\".$nom_proy."\\\\img\\\\'+filename+'.jpg')";
 
-
+$ln_conn = 23;
 $ln_lista_shapes = 33;
 $ln_layer = 207;
 $ln_desc = 225;
@@ -97,6 +104,10 @@ $contents = file($dir);
 $new_contents = array();
 foreach ($contents as $key => $value) {
 $new_contents[] = $value;
+
+if ($key == $ln_conn) {
+$new_contents[] = $conn;
+}
 
 if ($key == $ln_lista_shapes) {
 $new_contents[] = $lista_shapes;
